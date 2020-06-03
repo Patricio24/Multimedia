@@ -1,0 +1,300 @@
+<!DOCTYPE HTML>
+<!--
+	Strongly Typed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>FUNCIONAMIENTO</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="heaps.js"></script>
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="heapsortDemo.css">
+        <style>
+.accordion {
+  background-color:#C99;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2212";
+}.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+	</head>
+	<body class="right-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+					<div class="container">
+
+						<!-- Logo --><br><br><br><br>
+							<h1 id="logo"><a href="index.html">FUNCIONAMIENTO </a></h1>
+							<p>Es un algoritmo de ordenación no recursivo.</p>
+
+						<!-- Nav -->
+							<nav id="nav">
+								
+									<ul>
+					<li><a style="color:#000" class="icon fa-home" href="index.html"><span>INTRODUCCION</span></a></li>
+					<LI><a style="color:#000" class="icon fa-cog" href="left-sidebar.html"><span>HEAP SORT</span></a></li>
+					<li><a style="color:#000" class="icon fa-retweet" href="right-sidebar.html"><span>FUNCIONAMIENTO</span></a></li>
+					<li><a style="color:#000" class="icon fa-sitemap" href="no-sidebar.html"><span>FUENTES</span></a></li>							</ul>
+                    <img src="images/desarrollos-profesionales.png" width="200" height="180">
+							</nav>
+
+					</div>
+				</section>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+						<div class="row">
+
+							<!-- Content -->
+								<div id="content" class="col-8 col-12-medium">
+
+									<!-- Post -->
+										<article class="box post">
+											<header>
+												<h2 style="font-size:40px; font-weight:bold"><strong>HEAPSORT</strong><br />
+												</h2>
+											</header>
+											<span class="image featured"><img src="images/Captura.PNG" alt="" /></span>
+											 
+											<p style="color:#000; font-size:20px">
+                                            Heapsort es un algoritmo de ordenación que funciona construyendo primero un                                                montón de la lista y tirando repetidamente la raíz de la parte superior del                                            montón y la reconstruye hasta que no queda ningún elemento en el montón.
+                                            </p>
+											<p id="p1" style="color:#03F; font-size:20px">
+                                             Basa su funcionamiento en una propiedad de los montículos, por la cual, la                                               cima contiene siempre el menor elemento (o el mayor, según se haya definido                                              el montículo) de todos los almacenados en él.
+                                             </p>
+											<h3 style="color:#90C; font-size:24px; font-weight:bold">Algoritmo de 	                                                Ordenación no recursivo</h3>
+											<p style="color:#000; font-size:20px" >
+                                            Este algoritmo consiste en almacenar todos los elementos en un montículo y                                                luego extraer el nodo que queda como raíz en iteraciones sucesivas                                                obteniendo el conjunto ordenado
+                                            </p>
+											<p style="color:#000; font-size:20px; font-weight:bold">Para esto el método                                                realiza los siguientes pasos:</p>
+											<center><img src="images/Heap_sort_example.gif" alt="" width="400"                                                       height=   "400" /></center>
+											<p>
+                                            <ol class="viñeta">
+												<li > Se construye el Heap/montículo a partir del arreglo original.
+												<li> La raíz se coloca en el arreglo.
+												<li> El último elemento del montículo se vuelve la raíz.
+                                                <li> La nueva raíz se intercambia con el elemento de mayor valor de cada                                                     nivel.
+                                                <li> Tras el paso anterior la raíz vuelve a ser el mayor del montículo.
+                                                <li> Se repite el paso 2 hasta que quede el arreglo ordenado.
+												</ol>
+                                            </p>
+											<p></p>
+										</article>
+
+								</div>
+
+							<!-- Sidebar -->
+								<div id="sidebar" class="col-4 col-12-medium">
+
+									<!-- Excerpts -->
+										<section>
+											<ul class="divided">
+												<li>
+
+													<!-- Excerpt -->
+														<article class="box excerpt">
+															<header>
+																<h3 style="font-size:16px; text-align:center; color:#F63;                                                                     font-weight:bold">
+                                                                <a href="#">Desafortunadamente, heapsort no es estable,                                                                 por lo que clasificar una lista que ya está ordenada                                                                    podría terminar en un orden diferente.</a></h3>
+															</header>
+															<p>
+                                                            <span class="image featured"><img src="images/heapsort.svg" alt="" /></span>
+                                                            </p>
+                                                            
+														</article>
+
+												</li>
+											
+											</ul>
+										</section>
+
+									<!-- Highlights -->
+										<section>
+											<ul class="divided">
+												
+												<li>
+
+													<!-- Highlight -->
+														<article class="box highlight">
+															
+                                                            <button class="accordion">PSEUCODIGO HEAPSORT</button>
+															<div class="panel">
+  														    <p style="color:#000; font-size:18px"><br>
+                                                            HEAPSORT( T[ ] A, entero n) { 
+ 															BUILD_HEAP(A, n);               <strong>(1)</strong> 
+ 															mientras(n > 1) 
+ 																{ Intercambiar(A, 0, n- 1); <strong>(2)</strong> 
+  																  n--;                      <strong>(3)</strong> 
+ 																  HEAPIFY(A, 0, n);         <strong>(4)</strong> 
+ 																} 
+															} 
+                                                            </p>
+                                                            </div>
+                                                            <br>                                                            <br>
+                                                            <br>                                                            <br>
+															<img src="images/ordenamiento.png" width="400" height="350">
+														</article>
+
+												</li>
+											</ul>
+										</section>
+
+								</div>
+
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<header>
+							<h2><strong>DEMOSTRACIÓN DEL ALGORITMO HEAPSORT</strong></h2>
+						</header>
+						<div class="row">
+							<div class="col-6 col-12-medium">
+								<section> 
+                                <!--Diseño del canvas-->
+                                <div id="display">
+    								<canvas style="border-radius:20px" id="canvas" width="580" height="580">
+    								</canvas>
+   									 <a id=animanc></a>
+   								
+   							   </div>
+									<div id="change">
+      									<p style="text-align:center; opacity:0.1">
+                                        <br>El arreglo esta compuesto de 8 valores 						                                          numericos, en el cual se aplicará el algoritmo de  ordenación</p>    
+                                        <center>
+                                          <form  name="elements" id="numel">    
+                                         <input name="number" type="radio" value="8" checked>
+                                         <br>
+                                            <<input type="radio" name="number" value="9"> <br>
+                                            <input type="radio" name="number" value="10"> <br>
+                                            <input type="radio" name="number" value="11"> <br>
+                                            <input type="radio" name="number" value="12"> <br>
+                                            <input type="radio" name="number" value="13"> <br>
+                                            <input type="radio" name="number" value="14"> <br>
+                                            <input type="radio" name="number" value="15"> <br>
+                                            <input type="submit" name="submit-btn" value="Change">
+                                        </form>
+                                      </center>
+                                      </div>
+								</section>
+							</div>
+							<div class="col-6 col-12-medium">
+								<section>
+                                	<h2 style="color:#FFF; font-weight:bold">INSTRUCCIONES</h2>
+									<p style="color:#000; font-weight:bold"> Aquí presentamos una demostración en                                      Javascript de Heapsort. 				
+                               	  <li style="color:#000">El algoritmo contiene un arreglo de 8 numeros. 
+                                        <li style="color:#000">Puede generar numeros aleatorios para ordenar.                                        <li style="color:#000">La velocidad de animación también se puede cambiar.
+                                        
+                                        
+                                     </p>
+                                    
+									<div class="row">
+                                    
+										<div class="col-6 col-12-small">
+                                         <div id="controls">
+
+	                                  
+                                      <div id="randomize">
+                                      <p style="text-align:center"><br>Click aqui para generar valores aleatorios en el                                                                   arreglo.</p>
+                                      <center>
+                                         <form name="initialize" id="initelem">
+                                  <input style="width:150px" type="submit" name="randomize-btn" value= "ALEATORIO">
+                                  <br>
+     								     </form>
+                                      </center> 
+                                      </div>
+                                      </div>
+								</div>
+                                <!--ANIMACION-->
+								<div class="col-6 col-12-small">
+									<div id="controls">
+                                    	<center>
+                                       <div id="anim">
+      									<p style="text-align:center"><br>Comienza la animación del algortimo HeapSort</p>
+      									<form id="stanim">
+        									<input type="submit" name="stanim-btn" value="COMENZAR">
+      									</form><br>
+
+      							<label for="animSpeed"><strong style="color:#000"> - </strong> Velocidad                                 <strong style="color:#000"> + </strong></label><br>
+                                <input type="range" id="animSpeed" min="5" max="100" step="5" value="20"><br><br><br>
+                                      </div>
+                                      </center>
+                                            </div>
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+					</div>
+					<div id="copyright" class="container">
+						<ul class="links">
+							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+            
+             <script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+ 		 acc[i].addEventListener("click", function() {
+   		 this.classList.toggle("active");
+    		var panel = this.nextElementSibling;
+    	if (panel.style.maxHeight){
+     		 panel.style.maxHeight = null;
+    	} else {
+     		 panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+			</script>
+
+
+	</body>
+</html>
