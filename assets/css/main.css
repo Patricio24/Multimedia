@@ -1888,7 +1888,7 @@ input, select, textarea {
 	#header {
 		position: relative;
 		position: relative;
-		background: linear-gradient(to right, #13293d 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, #13293d 100%);
+		background: linear-gradient(to right, #CA2929, #000, #6f7881);
 		/*background: #fff;*/
 		text-align: center;
 	}
@@ -1946,7 +1946,7 @@ input, select, textarea {
 				text-decoration: none;
 				text-transform: uppercase;
 				font-weight: 400;
-				color: #2f2d2e;
+				color: white;
 				outline: 0;
 				display: block;
 			}
@@ -2188,8 +2188,8 @@ input, select, textarea {
 		overflow: hidden;
 		border-top: solid 2px #e5e5e5;
 		background: #13293d;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #13293d, #006494, #2970CA);   /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2970CA, #006494, #13293d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: -webkit-linear-gradient(to right, #CA2929, #000, #6f7881);   /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #CA2929, #000, #6f7881); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 			}
 
