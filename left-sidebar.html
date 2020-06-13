@@ -5,197 +5,236 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>HEAPSORT</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		 <!--VENTAJAS DESLIZANTES-->
- <style>
-.accordion {
-  background-color:#C99;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
-.active, .accordion:hover {
-  background-color: #ccc;
-}
-.accordion:after {
-  content: '\002B';
-  color: #777;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-.active:after {
-  content: "\2212";
-}.panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-</style>
-	</head>
-    
-	<body class="left-sidebar is-preload">
-		<div id="page-wrapper">
 
-			<!-- Header -->
-				<section id="header">	
-					<div class="container">
+<head>
+	<title>HEAPSORT</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<!--VENTAJAS DESLIZANTES-->
+	<style>
+		.accordion {
+			background-color: #C99;
+			color: #444;
+			cursor: pointer;
+			padding: 18px;
+			width: 100%;
+			border: none;
+			text-align: left;
+			outline: none;
+			font-size: 15px;
+			transition: 0.4s;
+		}
 
-						<!-- Logo --><br><br><br><br>
-							<h1 id="logo"><a href="index.html">ALGORITMO HEAPSORT</a></h1>
-							<p>Es un algoritmo de ordenación no recursivo.</p>
+		.active,
+		.accordion:hover {
+			background-color: #ccc;
+		}
 
-						<!-- Nav -->
-							<nav id="nav">
-								<ul>
-					<li><a style="color:#000" class="icon fa-home" href="index.html"><span>INTRODUCCION</span></a></li>
-					<LI><a style="color:#000" class="icon fa-cog" href="left-sidebar.html"><span>HEAP SORT</span></a></li>
-					<li><a style="color:#000" class="icon fa-retweet" href="right-sidebar.html"><span>FUNCIONAMIENTO</span></a></li>
-					<li><a style="color:#000" class="icon fa-sitemap" href="no-sidebar.html"><span>FUENTES</span></a></li>							</ul>
-                       <img src="images/wiseregistrycleaner-software-image.png" width="250" height="200">
-							</nav>
+		.accordion:after {
+			content: '\002B';
+			color: #777;
+			font-weight: bold;
+			float: right;
+			margin-left: 5px;
+		}
+
+		.active:after {
+			content: "\2212";
+		}
+
+		.panel {
+			padding: 0 18px;
+			background-color: white;
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.2s ease-out;
+		}
+	</style>
+</head>
+
+<body class="left-sidebar is-preload">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<section id="header">
+			<div class="container">
+
+				<!-- Logo --><br><br><br><br>
+				<h1 id="logo"><a href="index.html">ALGORITMO HEAPSORT</a></h1>
+				<p>Es un algoritmo de ordenación no recursivo.</p>
+
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a style="color:rgb(252, 249, 249)" class="icon fa-home"
+								href="index.html"><span>INTRODUCCION</span></a></li>
+						<LI><a style="color:rgb(250, 245, 245)" class="icon fa-cog" href="left-sidebar.html"><span>HEAP
+									SORT</span></a></li>
+									<li><a style="color:aliceblue" class="icon fa-question-circle"
+										href="cuestionario.html"><span>Cuestionario</span></a></li>
+						<!-- <li><a style="color:rgb(243, 234, 234)" class="icon fa-retweet"
+								href="right-sidebar.html"><span>FUNCIONAMIENTO</span></a></li>
+						<li><a style="color:rgb(238, 232, 232)" class="icon fa-sitemap"
+								href="no-sidebar.html"><span>FUENTES</span></a></li> -->
+					</ul>
+					<img src="images/wiseregistrycleaner-software-image.png" width="250" height="200">
+				</nav>
+
+			</div>
+		</section>
+
+		<!-- Main -->
+		<section id="main">
+			<div class="container">
+				<div class="row">
+
+					<!-- Sidebar -->
+					<div id="sidebar" class="col-4 col-12-medium">
+
+
+						<!-- Highlights -->
+						<section>
+							<ul class="divided">
+								<li>
+
+									<!-- Highlight -->
+									<article class="box highlight">
+										<header>
+											<h3 style="color:#F00; font-size:20px; font-weight:bold"><a
+													href="#">APLICACIONES</a></h3>
+										</header>
+										<a href="#" class="image left"><img src="images/bombilla.gif" alt="" /></a>
+										<p>Una de las más grandes aplicaciones de Heapsort es construir colas de
+											prioridad con la idea que busqueda los procesos que llevan la mayor carga de
+											prioridad dado una gran cantidad de procesos por hacer.<br>En esencia las
+											aplicaciones de Heapsort son las que traten de sobre ordenar una lista de
+											elementos.</p>
+									</article>
+
+								</li>
+								<li>
+
+									<!-- Highlight -->
+									<article class="box highlight">
+										<header>
+											<h3 style="color:#939; font-size:20px; font-weight:bold"><a
+													href="#">VENTAJAS</a></h3>
+										</header>
+										<a href="#" class="image left"></a>
+										<p>Usar este método de Ordenamiento trae consigo diversas ventajas con respecto
+											a los otros métodos, dichas características están en la tabla a
+											continuación:</p>
+										<button class="accordion">VENTAJA 1</button>
+										<div class="panel">
+											<p style="color:#000; font-weight:bold; font-size:20px"><br>Su desempeño es
+												en promedio tan bueno como el Quicksort y se comporta mejor que este
+												último en los peores casos.</p>
+										</div>
+
+										<button class="accordion">VENTAJA 2</button>
+										<div class="panel">
+											<p style="color:#000; font-weight:bold; font-size:20px"><br> Funciona
+												efectivamente con datos desordenados.</p>
+										</div>
+
+										<button class="accordion">VENTAJA 3</button>
+										<div class="panel">
+											<p style="color:#000; font-weight:bold; font-size:20px"><br> No utiliza
+												memoria adicional.</p>
+										</div>
+
+
+
+									</article>
+
+								</li>
+
+								<li>
+
+									<!-- Highlight -->
+									<article class="box highlight">
+										<header>
+											<h3 style="color:#939; font-size:20px; font-weight:bold"><a
+													href="#">DESVENTAJAS</a></h3>
+										</header>
+										<a href="#" class="image left"></a>
+										<p>Usar este método de Ordenamiento trae consigo diversas desventajas con
+											respecto a los otros métodos, dichas características están en la tabla a
+											continuación:</p>
+										<button class="accordion">DESVENTAJA 1</button>
+										<div class="panel">
+											<p style="color:#000; font-weight:bold; font-size:20px"><br> Aunque el
+												Heapsort tiene un mejor desempeño general que cualquier otro método
+												presentado de clasificación interna, es bastante complejo de programar.
+											</p>
+										</div>
+
+										<button class="accordion">DESVENTAJA 2</button>
+										<div class="panel">
+											<p style="color:#000; font-weight:bold; font-size:20px"><br> No es estable.
+												Es un método complejo</p>
+										</div>
+
+
+
+									</article>
+
+								</li>
+							</ul>
+						</section>
 
 					</div>
-				</section>
 
-			<!-- Main -->
-				<section id="main">
-					<div class="container">
-						<div class="row">
+					<!-- Content -->
+					<div id="content" class="col-8 col-12-medium imp-medium">
 
-							<!-- Sidebar -->
-								<div id="sidebar" class="col-4 col-12-medium">
+						<!-- Post -->
+						<article class="box post">
+							<header>
+								<h2 style="color:#000"><strong>DEFINICIÓN</strong> <br />
+								</h2>
+							</header>
+							<span class="image featured"><img src="images/algorithm-010.png" height="350"
+									alt="" /></span>
+							<h3></h3>
+							<p style="color:#000; font-size:20px">
+								Este método es una variante del método por selección, donde la búsqueda del elemento
+								máximo de un arreglo se realiza mediante técnicas basadas en la construcción de un
+								montículo.<br>Puede ser un montículo ascendente o descendente.</p>
+							<p style="color:#000; font-size:20px">
+								Es un método de ordenamiento basado con comparación, usa el Montículo o Heap como
+								estructura de datos. Este método es más lento que otros métodos, pero es más eficaz en
+								escenarios más rigurosos.<br><br>
+								Se define como un metodo <strong>
+									No recursivo, No Estable y con Complejidad Computacional.</strong>
 
+							</p>
 
-									<!-- Highlights -->
-										<section>
-											<ul class="divided">
-												<li>
+							<h3 style="color:#390; font-size:24px">PROPIEDADES</h3>
+							<p>
 
-													<!-- Highlight -->
-														<article class="box highlight">
-															<header>
-																<h3 style="color:#F00; font-size:20px; font-weight:bold"><a href="#">APLICACIONES</a></h3>
-															</header>
-															<a href="#" class="image left"><img src="images/bombilla.gif" alt=""/></a>
-															<p>Una de las más grandes aplicaciones de Heapsort es construir                                                               colas de prioridad con la idea que busqueda los procesos que                                                                llevan la mayor carga de prioridad dado una gran cantidad                                                                de procesos por hacer.<br>En esencia las aplicaciones de                                                                  Heapsort son las que traten de sobre ordenar una lista de                                                               elementos.</p>
-														</article>
-
-												</li>
-												<li>
-
-													<!-- Highlight -->
-														<article class="box highlight">
-															<header>
-															<h3 style="color:#939; font-size:20px; font-weight:bold"><a 																									                                                             href="#">VENTAJAS</a></h3>
-															</header>
-															<a href="#" class="image left"></a>
-                                                            <p>Usar este método de Ordenamiento trae consigo diversas 	                                                                ventajas con respecto a los otros métodos, dichas                                                               características están en la tabla a continuación:</p>
-															<button class="accordion">VENTAJA 1</button>
-															<div class="panel">
-  														  <p style="color:#000; font-weight:bold; font-size:20px"><br>Su   	                                                             desempeño es en promedio tan bueno como el Quicksort y se                                                            comporta mejor que este último en los peores casos.</p>
-															</div>
-
-															<button class="accordion">VENTAJA 2</button>
-                                                            <div class="panel">
-														  <p style="color:#000; font-weight:bold; font-size:20px"><br>                                                             Funciona efectivamente con datos desordenados.</p>
-															</div>
-
-                                                           <button class="accordion">VENTAJA 3</button>
-                                                            <div class="panel">
-                                                            <p style="color:#000; font-weight:bold; font-size:20px"><br>                                                            No utiliza memoria adicional.</p>
-                                                           </div>
-                                                           
-                                                           
-															
-														</article>
-
-												</li>
-                                                
-                                                <li>
-
-													<!-- Highlight -->
-														<article class="box highlight">
-															<header>
-															<h3 style="color:#939; font-size:20px; font-weight:bold"><a 																									                                                             href="#">DESVENTAJAS</a></h3>
-															</header>
-															<a href="#" class="image left"></a>
-                                                            <p>Usar este método de Ordenamiento trae consigo diversas 	                                                                desventajas con respecto a los otros métodos, dichas                                                               características están en la tabla a continuación:</p>
-															<button class="accordion">DESVENTAJA 1</button>
-															<div class="panel">
-  														  <p style="color:#000; font-weight:bold; font-size:20px"><br>		                                                             Aunque el Heapsort tiene un mejor desempeño general que                                                             cualquier otro método presentado de clasificación interna, es                                                             bastante complejo de programar.</p>
-															</div>
-
-															<button class="accordion">DESVENTAJA 2</button>
-															<div class="panel">
-														  <p style="color:#000; font-weight:bold; font-size:20px"><br>                                                             No es estable. Es un método complejo</p>
-															</div>
-
-                                                           
-															
-														</article>
-
-												</li>
-											</ul>
-										</section>
-
-								</div>
-
-							<!-- Content -->
-								<div id="content" class="col-8 col-12-medium imp-medium">
-
-									<!-- Post -->
-										<article class="box post">
-											<header>
-												<h2 style="color:#000"><strong>DEFINICIÓN</strong> <br />
-											  </h2>
-											</header>
-											<span class="image featured"><img src="images/algorithm-010.png" height="350"                                                    alt="" /></span>
-											<h3></h3>
-											<p style="color:#000; font-size:20px">
-                                            Este método es una variante del método por selección,                                              donde la búsqueda del elemento máximo de un arreglo se realiza mediante                                              técnicas basadas en la construcción de un montículo.<br>Puede ser un                                             montículo ascendente o descendente.</p>
-											<p style="color:#000; font-size:20px">
-                                            Es un método de ordenamiento basado con comparación, usa el Montículo o                                               Heap como estructura de datos. Este método es más lento que otros métodos,                                                pero es más eficaz en escenarios más rigurosos.<br><br>
-                                            	Se define como un metodo <strong>
-                                                 No recursivo, No Estable y con Complejidad Computacional.</strong>
-                                           
-                                            </p>
-											
-											<h3 style="color:#390; font-size:24px">PROPIEDADES</h3>
-											<p>
-                                            	
-                                            	<ul>
-                                            		<li style="color:#000; font-size:20px">
-                                                    	 Fue el primer algoritmo que surgió de los que ordenan en <strong>			                                                         O(n log n)</strong>.
-                                                    </li>
-                                                    <li style="color:#000; font-size:20px">
-                                                    	 Ordena en el lugar. No utiliza memoria auxiliar
-                                                    </li>
-                                                    <li style="color:#000; font-size:20px">
-                                                    	 No es estable.
-                                                    </li>
-                                                    <center>
-                                                    <img src="images/formula.svg" width="100">
-                                            		</center>
-                                            	</ul>
-                                            </p>
-											<h3  style="color:#00C; font-size:24px">Montículo</h3>
-											<p>
-                                            <article class="box highlight">
-												<a href="#" class="image left"><img src="images/Binary-Heap-1b08b627.png" 	                                                      alt="" /></a>
-													<p style="color:#000; font-size:20px"">
+							<ul>
+								<li style="color:#000; font-size:20px">
+									Fue el primer algoritmo que surgió de los que ordenan en <strong> O(n log
+										n)</strong>.
+								</li>
+								<li style="color:#000; font-size:20px">
+									Ordena en el lugar. No utiliza memoria auxiliar
+								</li>
+								<li style="color:#000; font-size:20px">
+									No es estable.
+								</li>
+								<center>
+									<img src="images/formula.svg" width="100">
+								</center>
+							</ul>
+							</p>
+							<h3 style="color:#00C; font-size:24px">Montículo</h3>
+							<p>
+							<article class="box highlight">
+								<a href="#" class="image left"><img src="images/Binary-Heap-1b08b627.png" alt="" /></a>
+								<p style="color:#000; font-size:20px"">
                                                     <br>Es una estructura de datos del tipo árbol binario. Este árbol                                                          binario tiene que ser completo, en otras palabras, cada nivel                                                          debe de estar lleno con excepción del ultimo nivel, en el último                                                          nivel, los hijos debe recargarse hacia un mismo lado,                                                          generalmente hacia el lado izquierdo, así como se muestra en la                                                        imagen de la derecha.
                                                     </p>
 															
@@ -208,94 +247,94 @@
 				</section>
 
 			<!-- Footer -->
-				<section id="footer">
-					<div class="container">
-						<header>
-                        <br>
-							<h2><strong>VER TAMBIEN:</strong></h2>
-						</header>
-						<div class="row">
-							<div class="col-4 col-6-medium col-12-small">
+				<section id=" footer">
+								<div class="container">
+									<header>
+										<br>
+										<h2><strong>VER TAMBIEN:</strong></h2>
+									</header>
+									<div class="row">
+										<div class="col-4 col-6-medium col-12-small">
 
-								<!-- Feature -->
-									<section>
-										<a href="https://www.youtube.com/watch?v=jPRLy0zudI8" class="image featured">
-                                        <video id="video1" width="400" controls>
-    										<source src="Algoritmo de Heapsort .mp4" type="video/mp4">				
-  									</video>
-                                        </a>
-										<header>
-											<h3 style="color:#FFF; font-size:20px; text-align:center"	><a href="https://www.youtube.com/watch?v=jPRLy0zudI8">ALGORITMOS Y ESTRUCTURAS DE DATOS</a></h3>
-										</header>
-										<p style="color:#000"><strong>El algoritmo Heapsort </strong> 
-										pertenece a la familia de algoritmos de clasificación eficientes, cuya complejidad promedio es lo mejor que podemos encontrar</p>
-									</section>
+											<!-- Feature -->
+											<img src="images/mtodo-de-heapsort-13-638.jpg" width="400" height="240">
+											<br>
+											<br>
+											<br>
 
-							</div>
-							<div class="col-4 col-6-medium col-12-small">
+											<header>
+												<h3 style="color:#FFF; font-size:20px; text-align:center"><a
+														href="https://es.slideshare.net/DigitalXlien/mtodo-de-heapsort">CÓMO
+														SE CONSTRUYE?</a></h3>
+											</header><br>
+											<p style="color:#000"><strong> El método de Heapsort</strong> es un
+												algoritmo de ordenamiento también llamado ordenamiento por montículos.
+												Esta presentación tiene la explicación de como funciona el método
+												utilizando montículos máximos.</p>
+										</div>
+										<div class="col-3 col-7-medium col-12-small">
 
-								<!-- Feature -->
-									<img src="images/mtodo-de-heapsort-13-638.jpg" width="400" height="240">
-                                    <br>
-                                    <br>
-                                    <br>
-                                    
-                                    <header>
-											<h3 style="color:#FFF; font-size:20px; text-align:center"><a href="https://es.slideshare.net/DigitalXlien/mtodo-de-heapsort">CÓMO SE CONSTRUYE?</a></h3>
-										</header><br>
-										<p style="color:#000"><strong> El método de Heapsort</strong> es un algoritmo de ordenamiento también llamado ordenamiento por montículos. Esta presentación tiene la explicación de como funciona el método utilizando montículos máximos.</p>
-							</div>
-							<div class="col-4 col-6-medium col-12-small">
+										</div>
+										<div class="col-4 col-7-medium col-12-small">
 
-								<!-- Feature -->
-									<section>
-                                        <a href="https://www.youtube.com/watch?v=MtQL_ll5KhQ" class="image featured">
-                                         <video id="video1" width="400" controls>
-    										<source src="VIDEOS/Heap Sort  GeeksforGeeks.mp4" type="video/mp4">				
-  									</video>
-                                        </a>
-										<header>
-											<h3 style="color:#FFF; font-size:20px; text-align:center" ><a href="https://www.geeksforgeeks.org/heap-sort/">TECNICA DE CLASIFICACIÓN HEAPSORT</a></h3>
-										</header>
-										<p style="color:#000"><strong>El algoritmo de clasificación Heap</strong>  tiene usos limitados porque Quicksort y Mergesort son mejores en la práctica. Sin embargo, la estructura de datos Heap en sí misma es enormemente utilizada.</p>
-									</section>
+											<!-- Feature -->
+											<section>
+												<a href="https://www.youtube.com/watch?v=MtQL_ll5KhQ"
+													class="image featured">
+													<video id="video1" width="400" controls>
+														<source src="VIDEOS/Heap Sort  GeeksforGeeks.mp4"
+															type="video/mp4">
+													</video>
+												</a>
+												<header>
+													<h3 style="color:#FFF; font-size:20px; text-align:center"><a
+															href="https://www.geeksforgeeks.org/heap-sort/">TECNICA DE
+															CLASIFICACIÓN HEAPSORT</a></h3>
+												</header>
+												<p style="color:#000"><strong>El algoritmo de clasificación
+														Heap</strong> tiene usos limitados porque Quicksort y Mergesort
+													son mejores en la práctica. Sin embargo, la estructura de datos Heap
+													en sí misma es enormemente utilizada.</p>
+											</section>
 
-							
-						</div>
-					</div>
-					<div id="copyright" class="container">
-						<ul class="links">
-							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</div>
-				</section>
 
-		</div>
+										</div>
+									</div>
+									<div id="copyright" class="container">
+										<ul class="links">
+											<li>&copy; Untitled. All rights reserved.</li>
+											<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+										</ul>
+									</div>
+		</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-         <!-- VENTAJAS DESLIZANTES -->   
-            <script>
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<!-- VENTAJAS DESLIZANTES -->
+	<script>
 		var acc = document.getElementsByClassName("accordion");
 		var i;
 
 		for (i = 0; i < acc.length; i++) {
- 		 acc[i].addEventListener("click", function() {
-   		 this.classList.toggle("active");
-    		var panel = this.nextElementSibling;
-    	if (panel.style.maxHeight){
-     		 panel.style.maxHeight = null;
-    	} else {
-     		 panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
-			</script>
+			acc[i].addEventListener("click", function () {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if (panel.style.maxHeight) {
+					panel.style.maxHeight = null;
+				} else {
+					panel.style.maxHeight = panel.scrollHeight + "px";
+				}
+			});
+		}
+	</script>
 
-	</body>
+</body>
+
 </html>
